@@ -135,7 +135,13 @@ header {
 .ads {
   grid-area: ads;
   margin-left: 1em;
-  margin-right: 1em;}
+  margin-right: 1em;
+}
+
+.ads > img {
+  width: 50%;
+}
+
 
 .sidePanel {
   grid-area: sidePanel;
@@ -173,7 +179,11 @@ header {
 
   .ads {
     margin-right: 2em;
+  }
 
+  .ads > img {
+    /* margin: 10px; */
+    width: 70%;
   }
 
   .sidePanel {
