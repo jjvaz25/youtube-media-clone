@@ -19,6 +19,15 @@ button {
   padding: 0 12px;
 }
 
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #c8c8c8;
+  border-radius: 5px;
+}
+
 .mainContainer {
   display: grid;
   background-color:aqua; 
