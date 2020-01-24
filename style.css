@@ -31,13 +31,16 @@ button:active {
 .mainContainer {
   display: grid;
   /* background-color:aqua;  */
-  
-  /* border: 1px solid black;
-  grid-template: repeat(8, 1fr) / repeat(8, 1fr); */
   min-height: 100vh;
-  grid-gap: .5rem; 
-  /* grid-auto-rows: minmax(125px, auto);*/
-  
+  grid-gap: 10px; 
+  grid-template-rows: 56px repeat(4, 1fr);
+  grid-template-areas: 
+  "header"
+  "media"
+  "description"
+  "ads"
+  "sidePanel"
+  "comments";
 }
 
 .box {
@@ -49,8 +52,9 @@ button:active {
 
 /* header */
 
-.a {
-  height: 56px;
+header {
+  grid-area: header;
+  /* height: 56px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,8 +105,6 @@ button:active {
 
 .searchBar > input:focus {
   outline: none;
-  /* box-shadow: 1px 1px 1px 1px rgba(32,33,36,0.28);
-  border-color: rgba(223,225,229,0); */
 }
 
 .searchBar > button {
@@ -124,27 +126,46 @@ button:active {
 
 
 
-.b {
+.media {
+  grid-area: media;
   /* grid-row: 2 / 5;
   grid-column: 1/ 6; */
 }
 
-.c {
+.ads {
+  grid-area: ads;
   /* grid-row: 2 / 4;
   grid-column: 6 / 9; */
 }
 
-.d {
+.sidePanel {
+  grid-area: sidePanel;
   /* grid-row: 3 / 9;
   grid-column: 6 / 9; */
 }
 
-.e {
+.description {
+  grid-area: description;
   /* grid-row: 5 / 7;
   grid-column: 1/ 6; */
 }
 
-.f {
+.comments {
+  grid-area: comments;
   /* grid-row: 7 / 9;
   grid-column: 1/ 6; */
+}
+
+@media (min-width: 800px) {
+  .mainContainer {
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 56px repeat(4, 1fr);
+    grid-template-areas: 
+      "header header"
+      "media ads"
+      "media sidePanel"
+      "description sidePanel"
+      "comments sidePanel"
+    ;
+  }
 }
