@@ -157,6 +157,7 @@ header {
   position: relative;
   padding-top: 1rem;
   text-decoration: none;
+  color: black;
 }
 
 .vidRecs:visited {
@@ -285,7 +286,7 @@ header {
 
 /* LARGE SCREENS */
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .mainContainer {
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 56px repeat(4, 1fr);
