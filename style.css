@@ -139,15 +139,51 @@ header {
 }
 
 .ads > img {
-  width: 50%;
+  width: 50%
+  /* height: 170px;
+  width: 410px; */
 }
 
+
+/* RECOMMENDED VIDS SIDEPANEL */
 
 .sidePanel {
   grid-area: sidePanel;
   margin-left: 1em;
   margin-right: 1em;
 }
+
+.vidRecs {
+  display: flex;
+  /* width: 100%; */
+  border: 1px solid red;
+  position: relative;
+  padding-top: 1rem;
+  text-decoration: none;
+}
+
+
+.thumbnail-img img {
+  height: 96px;
+}
+
+.duration {
+  border: 1px solid yellow;
+  text-align: right;
+  margin-top: -2rem;
+  padding: 0.5rem;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+}
+
+.duration span {
+  font-size: .75rem;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  padding: 0.1rem 0.4rem;
+}
+
 
 .description {
   grid-area: description;
@@ -160,6 +196,8 @@ header {
   margin-left: 1em;
   margin-right: 1em;
 }
+
+/* LARGE SCREENS */
 
 @media (min-width: 800px) {
   .mainContainer {
@@ -182,13 +220,15 @@ header {
   }
 
   .ads > img {
-    /* margin: 10px; */
-    width: 70%;
+    width: 300px
   }
 
   .sidePanel {
     margin-right: 2em;
   }
+
+
+
 
   .description {
     margin-left: 2em;
