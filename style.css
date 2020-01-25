@@ -162,6 +162,10 @@ header {
   text-decoration: none;
 }
 
+/* .thumbnail-img {
+  position: relative;
+} */
+
 
 .thumbnail-img img {
   height: 96px;
@@ -172,8 +176,6 @@ header {
   text-align: right;
   margin-top: -2rem;
   padding: 0.5rem;
-  border-radius: 2px;
-  letter-spacing: 0.5px;
 }
 
 .duration span {
@@ -182,6 +184,28 @@ header {
   color: white;
   background-color: black;
   padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+}
+
+.thumbnail-info {
+  padding: 0 1rem;
+  border: 1px solid lightgray;
+
+  /* white-space: nowrap; */
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+}
+
+.thumbnail-info > h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
