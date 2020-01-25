@@ -124,8 +124,6 @@ header {
 
 }
 
-
-
 .media {
   grid-area: media;
   margin-left: 1em;
@@ -156,7 +154,6 @@ header {
 .vidRecs {
   display: flex;
   /* width: 100%; */
-  border: 1px solid red;
   position: relative;
   padding-top: 1rem;
   text-decoration: none;
@@ -177,7 +174,6 @@ header {
 }
 
 .duration {
-  border: 1px solid yellow;
   text-align: right;
   margin-top: -2rem;
   padding: 0.5rem;
@@ -195,11 +191,6 @@ header {
 
 .thumbnail-info {
   padding: 0 .5rem 0 .4rem;
-  border: 1px solid lightgray;
-
-  /* white-space: nowrap; */
-  /* overflow: hidden;
-  text-overflow: ellipsis; */
 }
 
 .thumbnail-info > h3 {
