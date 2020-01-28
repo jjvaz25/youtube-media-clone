@@ -157,6 +157,42 @@ header {
   height: 100%;
 }
 
+.video-info {
+  padding: 20px 0px 8px;
+}
+
+.video-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.video-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 42px;
+
+}
+
+.interaction-button-holder {
+  display: flex;
+}
+
+.interaction-button {
+  display: flex;
+  height: 36px;
+  padding: 8px;
+  align-items: center;
+}
+
+.interaction-button p {
+  padding-left: 8px
+}
+
+.interaction-button img {
+  height: 16px;
+}
+
 /* ADVERTISEMENTS */
 .ads {
   grid-area: ads;
