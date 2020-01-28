@@ -202,7 +202,8 @@ header {
 }
 
 .ads > img {
-  width: 300px
+  width: 425px
+  /* min-width: 100% */
   /* height: 170px;
   width: 410px; */
 }
